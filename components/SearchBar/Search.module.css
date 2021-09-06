@@ -1,7 +1,8 @@
 .coin_search {
     margin-bottom: 64px;
     display: flex;
-    align-items: center;
+    margin-top: 50px;
+    margin-left: 470px;
     width: 300px;
 }
 

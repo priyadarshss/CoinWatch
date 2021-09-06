@@ -12,7 +12,8 @@ export default function CoinList ({filteredCoins}) {
                 price={coin.current_price}
                 price_change_24h={coin.price_change_24h}
                 market_cap={coin.market_cap}
-                ath={coin.ath}  
+                ath={coin.ath} 
+                key={coin.id} 
                 />
             })}
         </>

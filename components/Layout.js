@@ -45,9 +45,9 @@ const Layout = ({children, title="CoinWatch"}) => {
                     width='137.841'
                     height='131.088'
                     filterUnits='userSpaceOnUse'
-                    color-interpolation-filters='sRGB'
+                    colorInterpolationFilters='sRGB'
                   >
-                    <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                    <feFlood floodOpacity='0' result='BackgroundImageFix' />
                     <feBlend
                       mode='normal'
                       in='SourceGraphic'
@@ -108,9 +108,9 @@ const Layout = ({children, title="CoinWatch"}) => {
                     width='175.256'
                     height='34.0508'
                     filterUnits='userSpaceOnUse'
-                    color-interpolation-filters='sRGB'
+                    colorInterpolationFilters='sRGB'
                   >
-                    <feFlood flood-opacity='0' result='BackgroundImageFix' />
+                    <feFlood floodOpacity='0' result='BackgroundImageFix' />
                     <feColorMatrix
                       in='SourceAlpha'
                       type='matrix'

@@ -15,7 +15,9 @@
     "svg": "^0.1.0"
   },
   "devDependencies": {
+    "babel-plugin-react-html-attrs": "^3.0.5",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "file-loader": "^6.2.0"
   }
 }

@@ -27,10 +27,10 @@ const Coin = ({coin}) => {
               Genesis date: {coin.genesis_date}
             </h3>
             <h3 className={styles.coin_margin}>
-              Circulating supply: {coin.market_data.circulating_supply.toLocaleString()}
+              Circulating supply: {coin.market_data.circulating_supply.toFixed(2)}
             </h3>
             <h3 className={styles.coin_margin}>
-              Total supply: {coin.market_data.total_supply.toLocaleString()}
+              Total supply: {coin.market_data.total_supply}
             </h3>
           </div>
         </div>
