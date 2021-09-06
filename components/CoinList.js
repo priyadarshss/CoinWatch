@@ -5,7 +5,7 @@ export default function CoinList ({filteredCoins}) {
         <>
             {filteredCoins.map(coin => {
                 return <Coins 
-                key={coin.id}
+                id={coin.id}
                 name={coin.name}
                 symbol={coin.symbol}
                 img={coin.image}

@@ -1,26 +1,27 @@
-import Head from 'next/head'
 import SearchBar from '../components/SearchBar'
 import CoinList from '../components/CoinList'
 import styles from '../components/Coins/Coins.module.css'
 import Layout from '../components/Layout'
-
-function Header () {
-  return (
-    <div className={styles.header}>
-      <h1 className={styles.header_coin}>Coin</h1>
-      <h1 className={styles.header_price}>Price</h1>
-      <h1 className={styles.header_change}>Change(24h)</h1>
-    </div>
-  )
-}
+import { useState } from 'react'
 
 export default function Home({filteredCoins}) {
+  const [search, setSearch] =  useState('')
+
+  const allCoins = filteredCoins.filter(coin => 
+    coin.name.toLowerCase().includes(search.toLowerCase())
+  )
+
+  const handleChange = (e) => {
+    e.preventDefault()
+
+    setSearch(e.target.value.toLowerCase())
+  }
+
   return (
     <Layout className="layout">
       <div className="coin_app">
-        <SearchBar type='text' placeholder='Search a Crypto here' />
-        {/* <Header /> */}
-        <CoinList filteredCoins={filteredCoins} />
+        <SearchBar type='text' placeholder='Search a Crypto here' onChange={handleChange} />
+        <CoinList filteredCoins={allCoins} />
       </div>
     </Layout>
   )
