@@ -16,6 +16,7 @@ export default function CoinList ({filteredCoins}) {
                 key={coin.id} 
                 />
             })}
+            
         </>
     )
 }

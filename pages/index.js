@@ -3,6 +3,8 @@ import CoinList from '../components/CoinList'
 import styles from '../components/Coins/Coins.module.css'
 import Layout from '../components/Layout'
 import { useState } from 'react'
+import Wave from 'react-wavify'
+
 
 export default function Home({filteredCoins}) {
   const [search, setSearch] =  useState('')
@@ -20,8 +22,20 @@ export default function Home({filteredCoins}) {
   return (
     <Layout className={styles.layout}>
       <div className={styles.coin_app}>
-        <SearchBar type='text' placeholder='Search a Crypto here' onChange={handleChange} />
+        <SearchBar
+          type='text'
+          placeholder='Search a Crypto here'
+          onChange={handleChange}
+        />
         <CoinList filteredCoins={allCoins} />
+        <Wave fill='url(#gradient)'>
+          <defs>
+            <linearGradient id='gradient' gradientTransform='rotate(90)'>
+              <stop offset='10%' stopColor='#d4af37' />
+              <stop offset='90%' stopColor='#f00' />
+            </linearGradient>
+          </defs>
+        </Wave>
       </div>
     </Layout>
   )
