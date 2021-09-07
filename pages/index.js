@@ -28,7 +28,15 @@ export default function Home({filteredCoins}) {
           onChange={handleChange}
         />
         <CoinList filteredCoins={allCoins} />
-        <Wave fill='url(#gradient)'>
+        <Wave
+          fill='url(#gradient)'
+          options={{
+            height: 5,
+            amplitude: 50,
+            speed: 0.15,
+            points: 5,
+          }}
+        >
           <defs>
             <linearGradient id='gradient' gradientTransform='rotate(90)'>
               <stop offset='10%' stopColor='#d4af37' />
