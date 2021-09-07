@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout"
 import styles from './Coin.module.css'
+import Image from 'next/image'
 
 const Coin = ({coin}) => {
     return (
@@ -9,8 +10,8 @@ const Coin = ({coin}) => {
             <img
               src={coin.image.large}
               alt={coin.name}
-              className={styles.coin_image}
-            ></img>
+              className={styles.coin_image} 
+            />
             <br />
             <h1 className={styles.coin_name}>
               {coin.name} ({coin.symbol.toUpperCase()})

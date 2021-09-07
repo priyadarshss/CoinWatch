@@ -1,10 +1,9 @@
-import Logo from '../public/logo.svg'
 import Head from 'next/head'
 import Link from 'next/link'
 
 const Layout = ({children, title="CoinWatch"}) => {
     return (
-      <div className='layout'>
+      <div className='layout'>  
         <Head>
           <title>{title}</title>
           <meta name='description' content='Crypto tracker app' />
