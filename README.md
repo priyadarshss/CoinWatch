@@ -1,5 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-Hosted site - coin-watch.vercel.app
+
+Hosted site - https://coin-watch.vercel.app
 
 ## Getting Started
 
